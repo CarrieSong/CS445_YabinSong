@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Carrie/Softwares/eclipse-standard-kepler-SR1-win32-x86_64/eclipse/plugins/commons-cli-1.2.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

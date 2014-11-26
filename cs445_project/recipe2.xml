@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<recipe>
+	<name>Rustic Potato</name>
+	<ingredient>
+		<name>Flour</name>
+		<amount>27.2</amount>
+		<measuring_unit>oz</measuring_unit>
+		<type>White</type>
+	</ingredient>
+	<ingredient>
+		<name>Flour</name>
+		<amount>4.8</amount>
+		<measuring_unit>oz</measuring_unit>
+		<type>Whole wheat</type>
+	</ingredient>
+	<ingredient>
+		<name>Water</name>
+		<amount>19.5</amount>
+		<measuring_unit>floz</measuring_unit>
+		<type></type>
+	</ingredient>
+	<ingredient>
+		<name>Potato</name>
+		<amount>8</amount>
+		<measuring_unit>oz</measuring_unit>
+		<type></type>
+	</ingredient>
+	<ingredient>
+		<name>Salt</name>
+		<amount>0.6</amount>
+		<measuring_unit>oz</measuring_unit>
+		<type></type>
+	</ingredient>
+	<ingredient>
+		<name>Yeast</name>
+		<amount>1.6</amount>
+		<measuring_unit>tsp</measuring_unit>
+		<type></type>
+	</ingredient>
+	<instructions>
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	</instructions>
+	<units_made>1</units_made>
+</recipe>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<subscriber>
+	<name>John Doe</name>
+	<street>10 West 31st Street</street>
+	<city>Chicago</city>
+	<state>IL</state>
+	<zip>60616</zip>
+	<email>jdoe@example.com</email>
+	<phone>123-456-7809</phone>
+	<twitter>@breadlover</twitter>
+	<facebook>Baguette</facebook>
+</subscriber>
