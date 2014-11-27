@@ -24,6 +24,7 @@ public class Subscription  implements Serializable {
 		for(int i=0; i<7; i++) {
 			this.subscription[i] = new HashMap<Product, Integer>();
 		}
+		startDate = new MyDate();
 		status = "Nothing in the subscription";
 		specialDelivery = new HashMap<MyDate, HashMap<Product, Integer>>();
 	}
@@ -57,8 +58,6 @@ public class Subscription  implements Serializable {
 	}
 	
 	public void addModifyProduct(int d, Product pro, int amt) {
-		if(this.getStartDate() == null)
-			this.setStartDate(new MyDate());
 		if(d < 0 || d > 6) 
 			System.out.print("Day is from Sunday(0) to Saturday(6).");
 		else {
@@ -81,15 +80,6 @@ public class Subscription  implements Serializable {
 			}
 		}
 	}
-	/*
-	public HashMap<Product, Integer> getSubofDay(int d) {
-		if(d < 0 || d > 6) 
-			System.out.print("Day is from Sunday(0) to Saturday(6).");
-		else {
-			return this.subscription[d];
-		}
-		return null;
-	}*/
 	
 	public MyDate getSuspendFirstDate() {
 		return this.suspendFirstDate;

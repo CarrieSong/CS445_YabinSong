@@ -106,9 +106,10 @@ public class Bakery implements java.io.Serializable {
 		
 	}
 	
+	/*
 	public void changeDelivery(double d) {
 		this.setDeli(d);
-	}
+	} */
 	
 	public void addSubscriber(Subscriber s) {
 		Iterator<Subscriber> i = subs.iterator();
@@ -177,6 +178,7 @@ public class Bakery implements java.io.Serializable {
 	public Product modifyProductPrice(Product p, double price) {
 		Product newProduct = p.changePrice(price);
 		newProduct.setPID(nextPID.getAndIncrement());
+		p.setTerminateDate(new MyDate());
 		pros.add(newProduct);
 		for(int i=0; i<subs.size(); i++) {
 			HashMap<Product, Integer>[] sub = subs.get(i).getSub().getSubscription();
@@ -321,7 +323,7 @@ public class Bakery implements java.io.Serializable {
 			for(int i=0; i<ingredients.size(); i++) {
 				String ingreName = ingredients.get(i).getIName();
 				String type = ingredients.get(i).getType();
-				if(type != null) {
+				if(type != "") {
 					ingreName = ingreName + "(" + type + ")";
 				}
 				double amount = ingredients.get(i).getAmount()*pamount/units_made;
@@ -656,6 +658,7 @@ public class Bakery implements java.io.Serializable {
 		}
 	}
 
+
 	public void confirm_delivery(int UID) {
 		double pRevenue = 0;
 		double deliRevenue = this.getDeli();
@@ -698,4 +701,5 @@ public class Bakery implements java.io.Serializable {
 		this.getSubcribers().get(UID).setConfirmed(date);		
 		System.out.println("OK");
 	}
+
 }

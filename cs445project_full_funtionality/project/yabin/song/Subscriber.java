@@ -43,8 +43,16 @@ public class Subscriber  implements java.io.Serializable {
 		this.facebook = fcbk;
 	}
 	
+	public String getFacebook() {
+		return facebook;
+	}
+	
 	public void setTwitter(String twtr) {
 		this.twitter = twtr;
+	}
+	
+	public String getTwitter() {
+		return twitter;
 	}
 	
 	public void setEmail(String e) {

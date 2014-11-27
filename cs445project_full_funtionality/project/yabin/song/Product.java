@@ -12,8 +12,8 @@ public class Product  implements Serializable {
 	private int PID;
 	private double price;
 	private Recipe recipe;
-	MyDate startDate;
-	MyDate terminateDate;
+	private MyDate startDate;
+	private MyDate terminateDate;
 	
 	public Product() {
 		this.setPname("Baguette");

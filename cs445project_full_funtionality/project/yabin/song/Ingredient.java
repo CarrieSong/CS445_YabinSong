@@ -11,6 +11,13 @@ public class Ingredient implements java.io.Serializable{
 	private String measuring_unit;
 	private String type;
 	
+	public Ingredient() {
+		Iname = "";
+		amount = 0.0;
+		measuring_unit = "";
+		type = "";
+	}
+	
 	public String getIName() {
 		return Iname;
 	}
